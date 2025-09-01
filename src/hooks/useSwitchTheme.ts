@@ -11,12 +11,26 @@ export function useSwitchTheme() {
   const toggleWebTheme = () => {
     const nextTheme = webTheme === 'dark' ? 'light' : 'dark';
     setWebTheme(nextTheme);
-    if (nextTheme === 'dark') {
-      toast.success(t('toast.themeDark'));
-    } else {
-      toast.success(t('toast.themeLight'));
-    }
+    toast.success(
+      nextTheme === 'dark' ? t('toast.themeDark') : t('toast.themeLight')
+    );
   };
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const urlTheme = params.get('webTheme');
+
+    if (urlTheme === 'dark' || urlTheme === 'light') {
+      setWebTheme(urlTheme);
+    }
+
+    params.delete('webTheme');
+    const newUrl =
+      window.location.pathname +
+      (params.toString() ? '?' + params.toString() : '') +
+      window.location.hash;
+    window.history.replaceState({}, '', newUrl);
+  }, []);
 
   useEffect(() => {
     document.documentElement.classList.remove('dark', 'light');

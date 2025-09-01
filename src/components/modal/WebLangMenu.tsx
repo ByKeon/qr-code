@@ -31,6 +31,16 @@ export function WebLangMenu({ isModalOpen, onCloseModal }: ModalProps_WebLang) {
     return () => window.removeEventListener('keydown', handleKey);
   }, [isModalOpen, onCloseModal]);
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    params.delete('webLang');
+    const newUrl =
+      window.location.pathname +
+      (params.toString() ? '?' + params.toString() : '') +
+      window.location.hash;
+    window.history.replaceState({}, '', newUrl);
+  }, []);
+
   return (
     <AnimatePresence>
       {isModalOpen && (

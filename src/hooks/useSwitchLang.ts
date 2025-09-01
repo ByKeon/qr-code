@@ -8,16 +8,16 @@ import { switchLocale } from '@/utils/switchLocale';
 
 export function useSwitchLang() {
   const { t } = useTranslation();
-  const [webLang, setWebLang] = useState(i18n.language);
+  const [prevLang, setPrevLang] = useState(i18n.language);
 
   return useCallback(
     async (nextLang: TYPE_Lang) => {
-      if (nextLang !== webLang) {
-        setWebLang(nextLang);
+      if (nextLang !== prevLang) {
+        setPrevLang(nextLang);
         await switchLocale(nextLang);
         toast.success(t('toast.languageUpdated'));
       }
     },
-    [t, webLang]
+    [t, prevLang]
   );
 }
