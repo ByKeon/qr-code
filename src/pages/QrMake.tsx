@@ -197,7 +197,7 @@ export default function QrMake() {
               </div>
 
               {readOnly && (
-                <div className="mt-4 p-4 border-2 border-red-500 bg-red-100 text-red-700 rounded-lg text-sm">
+                <div className="mt-4 p-4 highlight-box border-2 rounded-lg text-sm">
                   <strong>{t('riskWarning-t')}</strong>
                   <p>{t('riskWarning-1')}</p>
                   <p>{t('riskWarning-2')}</p>

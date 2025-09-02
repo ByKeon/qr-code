@@ -45,7 +45,7 @@ export default function QrScan() {
           <div
             className={clsx(
               'p-4 space-y-2 font-bold text-lg text-center',
-              'bg-red-100 text-red-700 border-2 border-red-500 rounded-lg'
+              'highlight-box border-2 rounded-lg'
             )}
           >
             <div>{cameraError}</div>
