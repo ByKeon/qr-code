@@ -55,7 +55,7 @@ export function MainPage() {
                   'h-full p-6',
                   'flex flex-col justify-start',
                   'border rounded-xl shadow-md',
-                  'hover:bg-yellow-500 hover:text-black'
+                  'hover:bg-yellow-500 hover:text-black dark:hover:border-black'
                 )}
               >
                 <div className="flex items-center mb-4">
