@@ -55,7 +55,7 @@ export function MainPage() {
                   'h-full p-6',
                   'flex flex-col justify-start',
                   'border rounded-xl shadow-md',
-                  'hover:bg-yellow-500 hover:text-black dark:hover:border-black'
+                  'hover-base hover-border'
                 )}
               >
                 <div className="flex items-center mb-4">
@@ -64,7 +64,7 @@ export function MainPage() {
                     {mode.label}
                   </h2>
                 </div>
-                <hr className="border-t border-gray-300 my-2 group-hover:border-black" />
+                <hr className="my-2 hr-line group-hover:border-black" />
                 <p className="mt-4 break-words">{mode.explain}</p>
               </Link>
             </motion.div>

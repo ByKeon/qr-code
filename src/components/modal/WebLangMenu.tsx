@@ -78,7 +78,7 @@ export function WebLangMenu({ isModalOpen, onCloseModal }: ModalProps_WebLang) {
                     onClick={() => onClickLang(nextLang as TYPE_Lang)}
                     className={clsx(
                       'w-full text-left px-3 py-2 rounded',
-                      'hover:font-bold hover:bg-yellow-500 hover:text-black',
+                      'hover-base hover:font-bold',
                       {
                         'font-bold bg-white text-blue-500':
                           i18n.language === nextLang,

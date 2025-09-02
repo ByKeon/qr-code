@@ -140,7 +140,7 @@ export default function QrMake() {
         <AnimatePresence>
           {qrText !== '' && !readOnly && (
             <motion.hr
-              className="border-t border-black dark:border-white"
+              className="hr-line"
               initial={{ opacity: 0, x: '-100%' }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: '-100%' }}

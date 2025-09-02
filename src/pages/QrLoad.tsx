@@ -129,7 +129,7 @@ export default function QrLoad() {
             <div className="pb-4">{t('askUploadImage')}</div>
           ) : (
             <div className="w-full text-center">
-              <hr className="w-full mt-6 mb-4 border border-2 border-gray-300 dark:border-gray-600" />
+              <hr className="w-full hr-line mt-6 mb-4" />
               <div className="font-bold">{t('uploadedFileName')}</div>
               <div className="font-bold italic">( {showFileName} )</div>
             </div>

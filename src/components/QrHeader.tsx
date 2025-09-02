@@ -14,7 +14,7 @@ export function QrHeader({ name, desc }: TYPE_QrHeader) {
       <Link
         to={`/${i18n.language}`}
         title={t('global.goBack')}
-        className="p-1 rounded bg-blue-500 text-white hover:bg-yellow-500 hover:text-black"
+        className="p-1 rounded bg-blue-500 text-white hover-base"
       >
         <ArrowTurnLeftUpIcon className="w-6 h-6" />
       </Link>
