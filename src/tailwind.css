@@ -12,6 +12,6 @@
   }
 
   .hr-line {
-    @apply border-t border-gray-400;
+    @apply border-t border-gray-300;
   }
 }
