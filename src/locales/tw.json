@@ -1,8 +1,8 @@
 {
   "toast": {
-    "languageUpdated": "語言已切換為選擇的語系",
-    "themeDark": "已啟用【深色主題】",
-    "themeLight": "已啟用【淺色主題】"
+    "languageUpdated": "已切換為指定語系",
+    "themeDark": "已切換為【深色主題】",
+    "themeLight": "已切換為【淺色主題】"
   },
   "global": {
     "copy": "複製",
