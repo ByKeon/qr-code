@@ -8,7 +8,7 @@ interface If_QrHeader {
 }
 
 export function QrHeader({ name, desc }: If_QrHeader) {
-  const { t, i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   return (
     <div className="flex items-start space-x-4">
       <Link

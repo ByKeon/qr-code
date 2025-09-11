@@ -12,7 +12,7 @@ interface If_Modal_WebLang {
 }
 
 export function WebLangMenu({ isModalOpen, onCloseModal }: If_Modal_WebLang) {
-  const { t, i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const switchLang = useSwitchLang();
   const showKnownName = true;
 

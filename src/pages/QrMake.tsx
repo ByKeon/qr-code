@@ -9,7 +9,7 @@ import { TextArea } from '@/components/TextArea';
 import { encryptXor, decryptXor } from '@/utils/cryptoXor';
 
 export default function QrMake() {
-  const { t, i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [qrText, setQrText] = useState('');
   const qrRef = useRef<HTMLDivElement>(null);
   const qrCanvasRef = useRef<HTMLCanvasElement>(null);
