@@ -1,8 +1,8 @@
 {
   "toast": {
-    "languageUpdated": "已切换为指定语系",
-    "themeDark": "已切换为【深色主题】",
-    "themeLight": "已切换为【浅色主题】"
+    "languageSwitched": "語系已切換",
+    "themeDark": "已切換為【深色主題】",
+    "themeLight": "已切換為【淺色主題】"
   },
   "global": {
     "copy": "复制",
@@ -17,14 +17,14 @@
     "shareCopied": "已复制【分享链接】",
     "selectLanguage": "选择语系"
   },
-  "pleaseClickFunction": "请选择功能",
-  "QR-Code-Name": "QR码服务网",
+  "pleaseClickFunction": "请点击功能",
+  "QR-Code-Name": "QR 码服务网",
   "QR-Make-Name": "生成 QR 码",
-  "QR-Make-Desc": "输入内容即时生成 QR 码",
+  "QR-Make-Desc": "输入内容即可实时生成 QR 码",
   "enterText...": "请输入文字…",
   "riskWarning-t": "免责声明 & 风险提示",
   "riskWarning-1": "任何用户均可利用本平台的服务即时生成各种内容的 QR 码。",
-  "riskWarning-2": "请在扫码前自行评估安全风险与信息安全性。",
+  "riskWarning-2": "请在扫码前自行评估信息安全风险。",
   "riskWarning-3": "对于因使用本平台服务所产生的任何直接或间接损失，本平台概不负责。",
   "QR-Load-Name": "载入 QR 码",
   "QR-Load-Desc": "分析图片文件中的 QR 码",
@@ -40,7 +40,7 @@
   "deviceAPINotSupported": "系统不支持设备检测！",
   "cameraNotAllowed": "用户拒绝相机权限！",
   "cameraNotFound": "设备上找不到相机！",
-  "cameraUnknownError": "设备发现未知错误！",
+  "cameraUnknownError": "设备出现未知错误！",
   "cameraNotStart": "相机无法开启",
   "detectedCamera": "检测到的相机",
   "click2Visit": "点击前往链接",
