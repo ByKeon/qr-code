@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { XMarkIcon } from '@heroicons/react/24/solid';
 import { motion, AnimatePresence } from 'framer-motion';
 
-interface TextArea {
+interface If_TextArea {
   className?: string;
   value: string;
   onChange?: (value: string) => void;
@@ -27,7 +27,7 @@ export function TextArea({
   rows = 4,
   readOnly = false,
   hideLength = false,
-}: TextArea) {
+}: If_TextArea) {
   const { t } = useTranslation();
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
   return (

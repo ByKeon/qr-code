@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowTurnLeftUpIcon } from '@heroicons/react/24/outline';
 
-type TYPE_QrHeader = {
+interface If_QrHeader {
   name: string;
   desc: string;
-};
+}
 
-export function QrHeader({ name, desc }: TYPE_QrHeader) {
+export function QrHeader({ name, desc }: If_QrHeader) {
   const { t, i18n } = useTranslation();
   return (
     <div className="flex items-start space-x-4">
